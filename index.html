@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/bd2d8ab2a6.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -177,11 +180,12 @@
     <main>
         <!-- Deal of the day section start-->
         <section class="container mx-auto lg:px-12 px-6 my-24">
-            <div>
+            <div class="flex flex-col">
                 <div class="flex flex-col lg:flex-row justify-between items-center">
                     <div>
                         <h2 class="text-5xl font-bold">Deal of the day</h2>
-                        <p class="text-[16px] font-medium w-[615px] mt-6 mb-12">Contrary to popular belief, is not
+                        <p class="text-[16px] font-medium w-[615px] mt-6 mb-12 opacity-70">Contrary to popular belief,
+                            is not
                             simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
                             it over 2000 years old.</p>
                     </div>
@@ -216,10 +220,11 @@
                 </div>
 
                 <!-- fruits card -->
-                <div>
+                <div class="mt-10">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <!-- first card -->
-                        <div class="px-12 py-8 flex flex-col space-y-4  rounded-lg shadow-xl">
+                        <div
+                            class="px-12 py-8 flex items-center justify-center flex-col space-y-4  rounded-lg shadow-xl">
                             <img src="images/fruit6.png" alt="">
 
                             <h3 class="text-2xl font-bold text-center">12.90$ - 18.85$</h3>
@@ -271,6 +276,7 @@
                             </div>
                             <button class="btn btn-ghost text-lg font-bold">Details</button>
                         </div>
+
                         <!-- fourth card -->
                         <div class="px-12 py-8 flex flex-col space-y-4  rounded-lg shadow-xl">
                             <img src="images/fruit9.png" alt="">
@@ -292,10 +298,337 @@
 
                     </div>
                 </div>
+                <button class="btn text-white bg-[#F85559] mt-12 mx-auto">Show all</button>
             </div>
 
         </section>
         <!-- Deal of the day section end-->
+
+
+        <!-- meet the team section start -->
+        <section class="container mx-auto lg:px-12 px-6 my-24">
+
+            <div
+                class="bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/banner1.png)] bg-center bg-cover lg:h-[70vh] flex items-center justify-center">
+                <div class="space-y-7">
+                    <h2 class="text-5xl font-extrabold text-center">Meet the team section</h2>
+                    <p class="text-[16px] font-medium text-center mx-auto w-2/3">Contrary to popular belief, is not
+                        simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                        over 2000 years old.</p>
+
+                    <!-- meet card -->
+                    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+                        <!-- first meet card -->
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/member1.png" alt="">
+                            <h3 class="text-2xl font-bold mt-7 text-center">Awlad Hossain</h3>
+                            <p class="text-[16px] font-medium">Fruits Expert</p>
+
+                            <div class="flex space-x-3 text-red-400 ">
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+
+                        <!-- second meet card -->
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/member2.png" alt="">
+                            <h3 class="text-2xl font-bold mt-7 text-center">Awlad Hossain</h3>
+                            <p class="text-[16px] font-medium">Fruits Expert</p>
+
+                            <div class="flex space-x-3 text-red-400 ">
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+
+                        <!-- third meet card -->
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/member3.png" alt="">
+                            <h3 class="text-2xl font-bold mt-7 text-center">Awlad Hossain</h3>
+                            <p class="text-[16px] font-medium">Fruits Expert</p>
+
+                            <div class="flex space-x-3 text-red-400 ">
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+
+                        <!-- fourth meet card -->
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/member4.png" alt="">
+                            <h3 class="text-2xl font-bold mt-7 text-center">Awlad Hossain</h3>
+                            <p class="text-[16px] font-medium">Fruits Expert</p>
+
+                            <div class="flex space-x-3 text-red-400 ">
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- meet the team section end -->
+
+
+        <!-- why choose us section start -->
+        <section class="container mx-auto lg:px-12 px-6 my-32">
+            <div>
+                <h1 class="text-5xl font-extrabold text-center">Why Choose Us</h1>
+                <p class="font-medium text-center w-3/5 mx-auto">Contrary to popular belief, is not simply random text.
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                <!-- first text card -->
+                <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 mt-12">
+
+                    <!-- first grid -->
+                    <div class="border-2 border-red-600">
+                        <div class="grid grid-flow-col space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200 flex justify-center items-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                                        fill="#121212" />
+                                </svg>
+                            </div>
+
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold ">Dedicated Team</h3>
+                                <p class="w-[100px] h-px bg-slate-300"></p>
+                                <p>Professional employes are there for you to pcik the most amazing and fresh fruits</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="grid grid-flow-col space-x-4 mt-12 mb-12">
+
+                            <div class="w-12 h-12 rounded-full bg-slate-200 flex justify-center items-center ">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                                        fill="#121212" />
+                                </svg>
+                            </div>
+
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold ">Dedicated Team</h3>
+                                <p class="w-[100px] h-px bg-slate-300"></p>
+                                <p>Professional employes are there for you to pcik the most amazing and fresh fruits</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="grid grid-flow-col space-x-4">
+
+                            <div class="w-12 h-12 rounded-full bg-slate-200 flex justify-center items-center ">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                                        fill="#121212" />
+                                </svg>
+                            </div>
+
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold ">Dedicated Team</h3>
+                                <p class="w-[100px] h-px bg-slate-300"></p>
+                                <p>Professional employes are there for you to pcik the most amazing and fresh fruits</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second grid -->
+                    <div class="border-2 border-red-600 ">
+                        <img class="object-cover" src="images/whychoose1.png" alt="">
+                    </div>
+
+                    <!-- third gird -->
+                    <div class="border-2 border-red-600">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- why choose us section end -->
+
+        <!-- contact form start -->
+        <section class="container mx-auto lg:px-12 px-6 my-48">
+            <div>
+                <h2 class="text-5xl font-bold text-center">Contact Us</h2>
+                <p class="font-medium w-2/3 mx-auto mb-12">We use an agile approach to test assumptions and connect with
+                    the needs of your audience early and often</p>
+
+                <!-- input field -->
+                <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+
+                    <div class="grid gap-4 lg:col-span-2">
+
+                        <div class="grid gap-4 lg:grid-cols-2">
+
+                            <div class="grid ">
+                                <label for="">First Name</label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                            </div>
+
+                            <div class="grid">
+                                <label for="">Last Name</label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                            </div>
+
+
+                            <div class="grid">
+                                <label for="">Your Email</label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                            </div>
+
+                            <div class="grid">
+                                <label for="">Phone Number</label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <label for="">Your Message</label>
+                            <textarea class="textarea textarea-bordered w-full 
+                                placeholder=" Leave your comment" rows=" 5"></textarea>
+                        </div>
+                        <div>
+                            <p>By submitting this form you agree to our terms and conditions and our privacy policy
+                                which explains how we may collect, use and disclose your personal information including
+                                to third parties.</p>
+                        </div>
+                        <div>
+                            <button class="text-white text-lg font-medium btn btn-primary">Send Message</button>
+                        </div>
+
+
+                    </div>
+
+                    <!-- info  -->
+                    <div class="space-y-12">
+                        <div class="flex flex-col justify-center items-center space-y-4">
+                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex justify-center items-center">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <h2 class="text-2xl font-semibold">Company information:</h2>
+                            <p class="text-xl font-medium">Themesberge LLC <br>Tax id: USXXXXXX</p>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center space-y-4">
+                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex justify-center items-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h2 class="text-2xl font-semibold">Address:</h2>
+                            <p class="text-xl font-medium text-center">SILVER LAKE, United Stated 1941 Late <br>Avenue
+                                <br>Zip Code/Postal code:03875
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center space-y-4">
+                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex justify-center items-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h2 class="text-2xl font-semibold">Call Us:</h2>
+                            <p class="text-xl font-medium">Call usto speak to a member of our <br>team.We are always
+                                happy to help.</p>
+                        </div>
+                        <h2 class="text-2xl font-bold text-blue-800 mx-auto text-center">+1(646)786-5060</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+        <!-- contact form end -->
 
     </main>
     <footer>
